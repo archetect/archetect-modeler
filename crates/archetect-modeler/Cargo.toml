@@ -1,0 +1,11 @@
+[package]
+name = "archetect-modeler"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+archetect-model-mermaid = { path = "../archetect-model-mermaid" }
+
+serde = { version = "1.0.202", features = ["derive"] }
+linked-hash-map = { version = "0.5.6", features = ["serde_impl", "serde"] }
+serde_yaml = "0.9.33"
